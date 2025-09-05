@@ -218,7 +218,7 @@ post_load()
     common_scripts\utility::array_thread( getentarray( "trainees", "targetname" ), maps\_utility::add_spawn_function, ::h2_hide_ai_pit );
     getent( "trainee_01", "script_noteworthy" ) thread maps\_utility::add_spawn_function( ::h2_hide_ai_pit );
     level.foley = maps\_utility::spawn_targetname( "foley", 1 );
-    level.foley.name = "Sgt. Foley - Shadow Company";
+    level.foley.name = "Sgt. Foley - Force Recon";
     level.foley.animname = "foley";
     level.foley.animnode = spawn( "script_origin", ( -2512.5, 5138.8, -56.1 ) );
     level.foley.animnode.angles = ( 0.0, -90.0, 180.0 );
@@ -454,7 +454,7 @@ _id_C0D6()
     var_0 = getent( "pit_start", "targetname" );
     level.player setorigin( var_0.origin );
     level.player setplayerangles( var_0.angles );
-    level.shep.name = "Gen. Shepherd - US Army";
+    level.shep.name = "Gen. Shepherd - Force Recon";
     thread _id_B651();
 }
 
@@ -462,7 +462,7 @@ _id_CE30()
 {
     maps\ssdd_lighting::_id_AAC1( "course" );
     soundscripts\_snd::snd_message( "start_course_checkpoint" );
-    level.shep.name = "Gen. Shepherd - US Army";
+    level.shep.name = "Gen. Shepherd - Force Recon";
     common_scripts\utility::flag_set( "dunn_finished_welcome_anim" );
     level.pitanimnode = spawnstruct();
     level.pitanimnode.origin = ( -3568.0, 2280.0, -192.0 );
@@ -1850,7 +1850,7 @@ _id_C4F7()
     level._id_B85D = maps\_utility::spawn_targetname( "pitguy", 1 );
     level._id_B85D maps\_utility::gun_remove();
     level._id_B85D.animname = "dunn";
-    level._id_B85D.name = "Cpl. Dunn - Shadow Company"; //here
+    level._id_B85D.name = "Cpl. Dunn - Force Recon"; //here
     level._id_B85D.bdisabledefaultfacialanims = 1;
     level._id_B85D _id_B3AB::_id_BEBA( "head", level.player, 300, 45, 45, 30, 45, 0, 1, 10, 0 );
     level._id_D177 = spawn( "script_model", ( 0.0, 0.0, 0.0 ) );
@@ -5550,7 +5550,7 @@ h2_pit_intro_animation()
     var_0 thread maps\_anim::anim_loop_solo( self, "h2_training_shepherdwatching_" + self.script_noteworthy + "_loop", "stop_loop" );
     common_scripts\utility::flag_set( "pit_stop_loop" );
     level._id_B416 maps\_utility::waittill_player_lookat( 0.9, undefined, 1, 60 );
-    level._id_B416.name = "Gen. Shepherd - US Army";
+    level._id_B416.name = "Gen. Shepherd - Force Recon";
     var_0 notify( "stop_loop" );
     var_0 maps\_anim::anim_single_solo( self, "h2_training_shepherdwatching_" + self.script_noteworthy + "_forward" );
     var_0 maps\_anim::anim_loop_solo( self, "h2_training_shepherdwatching_" + self.script_noteworthy + "_Endloop" );
@@ -5576,7 +5576,7 @@ h2_pit_intro()
     var_0 = getentarray( "shepherd_intro", "targetname" );
     level._id_B416 = getent( "shepherd", "script_noteworthy" );
     level._id_B416 maps\_utility::add_spawn_function( ::precognitive_paranoia_think );
-    level._id_B416.name = "Gen. Shepherd - US Army";
+    level._id_B416.name = "Gen. Shepherd - Force Recon";
     foreach ( var_2 in var_0 )
     {
         var_2.animname = "generic";

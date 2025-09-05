@@ -324,7 +324,7 @@ _id_C8E1()
     wait 2.55;
     maps\_utility::enableplayerweapons( 1 );
     setsaveddvar( "ammoCounterHide", "1" );
-    level.player setViewmodel( "viewmodel_base_viewhands" );
+    level.player setViewmodel( "viewhands_sas_woodland" );
     level.player takeweapon( "colt45" );
     level.player takeweapon( "scar_h_acog" );
     level.player takeweapon( "fraggrenade" );

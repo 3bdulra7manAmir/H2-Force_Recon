@@ -213,7 +213,7 @@ _id_C2B0()
     precachestring( &"disturbing_content_in_game_popup" );
     precacheitem( "colt45" );
     precachemodel( "h2_viewbody_airport" );
-    precachemodel( "viewmodel_base_viewhands" );
+    precachemodel( "viewhands_sas_woodland" );
     precachemodel( "body_urban_civ_female_b_a" );
     precachemodel( "body_urban_civ_female_b_b" );
     precachemodel( "body_urban_civ_female_a_b" );

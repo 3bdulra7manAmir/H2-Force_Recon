@@ -333,9 +333,9 @@ _id_BB63()
 _id_C659()
 {
     level.scr_animtree["playerview"] = #animtree;
-    level.scr_model["playerview"] = "viewhands_player_us_army"; //here
+    level.scr_model["playerview"] = "viewhands_player_sas_woodland"; //here
     level.scr_animtree["worldbody"] = #animtree;
-    level.scr_model["worldbody"] = "viewbody_us_army"; //here
+    level.scr_model["worldbody"] = "worldbody_h1_sas_woodland"; //here
     level.scr_anim["worldbody"]["estate_ending_drag"] = %h2_estate_drag_player;
     level.scr_anim["worldbody"]["estate_ending_part1"] = %h2_estate_chopper_sequence_player;
     level.scr_anim["worldbody"]["estate_ending_part2"] = %h2_estate_body_toss_player;

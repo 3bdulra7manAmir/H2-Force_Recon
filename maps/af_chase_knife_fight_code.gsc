@@ -402,7 +402,7 @@ _id_C6C5()
 
     if ( common_scripts\utility::flag( "bloody_player_rig" ) )
         //level.player_rig setmodel( "h2_gfl_m4_sopmod_ii_viewbody" ); //here
-        level.player_rig setmodel( "viewbody_us_army" ); //here
+        level.player_rig setmodel( "worldbody_h1_sas_woodland" ); //here
 
     return level.player_rig;
 }

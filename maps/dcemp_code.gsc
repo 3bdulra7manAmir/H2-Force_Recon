@@ -795,8 +795,8 @@ _id_B717()
     soundscripts\_snd::snd_message( "start_building_shellshock_filter" );
     level.player _meth_85A0();
     objective_onentity( level._id_CD9B, level.foley, ( 0.0, 0.0, 70.0 ) );
-    level.foley.name = "Sgt. Foley - Shadow Company"; // here
-    level._id_C280.name = "Cpl. Dunn - Shadow Company"; //here
+    level.foley.name = "Sgt. Foley - Force Recon"; // here
+    level._id_C280.name = "Cpl. Dunn - Force Recon"; //here
     level._id_A8A0 delete();
     common_scripts\utility::array_call( getaiarray( "axis" ), ::delete );
     var_2 = getent( "light_entry_lobby", "script_noteworthy" );

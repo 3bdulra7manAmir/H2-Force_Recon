@@ -4515,7 +4515,7 @@ _id_B4AC()
 _id_A8B0()
 {
     level._id_BD7E = self;
-    self.name = "Cpl. Dunn - Shadow Company";
+    self.name = "Cpl. Dunn - Force Recon";
     self.animname = "taco";
     thread maps\_utility::magic_bullet_shield();
 }
@@ -4523,7 +4523,7 @@ _id_A8B0()
 _id_C3CE()
 {
     level._id_CE19 = self;
-    self.name = "Sgt. Foley - Shadow Company";
+    self.name = "Sgt. Foley - Force Recon";
     self.animname = "raptor";
     thread maps\_utility::magic_bullet_shield();
     common_scripts\utility::flag_wait( "move_president_to_prep" );

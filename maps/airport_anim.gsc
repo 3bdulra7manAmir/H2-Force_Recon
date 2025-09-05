@@ -432,7 +432,7 @@ player()
     level.scr_anim["player_ending"]["end_player_shot"] = %h2_airport_ending_player;
     maps\_anim::addnotetrack_flag( "player_ending", "start_fbs", "cops_arrive", "end_player_shot" );
     level.scr_animtree["player_ending"] = #animtree;
-    level.scr_model["player_ending"] = "viewbody_us_army"; //here
+    level.scr_model["player_ending"] = "worldbody_h1_sas_woodland"; //here
 }
 #using_animtree("animated_props");
 

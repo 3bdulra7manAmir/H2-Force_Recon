@@ -226,12 +226,12 @@ _id_C888()
 {
     level.scr_anim["player_bigjump"]["jump"] = %h2_favela_escape_bigjump_playerjump;
     level.scr_anim["player_bigjump"]["recover"] = %h2_favela_escape_bigjump_playerfall;
-    level.scr_model["player_bigjump"] = "viewbody_us_army"; //here
+    level.scr_model["player_bigjump"] = "worldbody_h1_sas_woodland"; //here
     level.scr_animtree["player_bigjump"] = #animtree;
-    level.scr_model["player"] = "viewhands_player_us_army"; //here
+    level.scr_model["player"] = "viewhands_player_sas_woodland"; //here
     level.scr_animtree["player"] = #animtree;
     level.scr_animtree["worldbody"] = #animtree;
-    level.scr_model["worldbody"] = "viewbody_us_army"; //here
+    level.scr_model["worldbody"] = "worldbody_h1_sas_woodland"; //here
     level.scr_anim["worldbody"]["slide_loop"][0] = %h2_favelaescape_slide_player_idle;
     level.scr_anim["worldbody"]["slide_in"] = %h2_favelaescape_slide_player_in;
     level.scr_anim["worldbody"]["slide_out"] = %h2_favelaescape_slide_player_out;
@@ -242,7 +242,7 @@ _id_C888()
     level.scr_anim["worldbody"]["slide_al"] = %h2_favelaescape_slide_player_turnr;
     level.scr_anim["worldbody"]["rooftop_mantle"] = %h2_favela_escape_rooftop_traverse_player;
     level.scr_anim["worldbody"]["chopperjump_jump"] = %h2_favela_escape_ending_player_catch_rope;
-    level.scr_model["viewhands"] = "viewhands_player_us_army"; //here
+    level.scr_model["viewhands"] = "viewhands_player_sas_woodland"; //here
     level.scr_animtree["viewhands"] = #animtree;
 }
 #using_animtree("script_model");

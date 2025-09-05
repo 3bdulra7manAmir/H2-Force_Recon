@@ -579,8 +579,8 @@ _id_CC93()
 
     level._id_C729 = 8;
     level._id_C3D0 = 10;
-    level._id_AC03.name = "Sgt. Foley - Shadow Company";
-    level._id_C280.name = "Cpl. Dunn - Shadow Company";
+    level._id_AC03.name = "Sgt. Foley - Force Recon";
+    level._id_C280.name = "Cpl. Dunn - Force Recon";
     thread _id_D301::_id_AADA( 2 );
     thread _id_D301::_id_AADA( 3 );
     thread _id_D301::_id_AADA( 4 );
@@ -2805,7 +2805,7 @@ _id_B79E()
 
 _id_B820()
 {
-    level._id_AC03.name = "Sgt. Foley - Shadow Company";
+    level._id_AC03.name = "Sgt. Foley - Force Recon";
     var_0 = getnode( "foley_crowsnest_radio", "script_noteworthy" );
     var_1 = common_scripts\utility::getstruct( "foley_anim_origin", "targetname" );
     level._id_AC03 setgoalnode( var_0 );
@@ -5404,7 +5404,7 @@ _id_D2B3()
     common_scripts\utility::flag_wait( "player_crash_done" );
     _func_31C( 7 );
     //here
-    level.player setviewmodel( "viewmodel_base_viewhands" );
+    level.player setviewmodel( "viewhands_sas_woodland" );
 }
 
 _id_CBB0()
@@ -7016,7 +7016,7 @@ _id_B351( var_0, var_1, var_2 )
         level.squad = [];
         level._id_AC03 = maps\_utility::spawn_targetname( "teamLeader" );
         level._id_C280 = maps\_utility::spawn_targetname( "friendly02" );
-        level._id_C280.name = "Cpl. Dunn - Shadow Company";
+        level._id_C280.name = "Cpl. Dunn - Force Recon";
         level._id_BBBD = maps\_utility::spawn_targetname( "friendly03" );
         level.squad[0] = level._id_AC03;
         level.squad[1] = level._id_C280;

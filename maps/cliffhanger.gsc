@@ -26,7 +26,7 @@ main()
     var_0 = undefined;
     setsaveddvar( "com_cinematicEndInWhite", 1 );
     var_4 = getent( "price", "script_noteworthy" );
-    var_4.script_friendname = "Capt. MacTavish - Shadow Company";
+    var_4.script_friendname = "Capt. MacTavish - Force Recon";
     level._id_AFD9 = 500;
     level._id_C6AC = 200;
     level._id_B65E = 1;
@@ -610,7 +610,7 @@ _id_D17D()
     _id_B358();
     soundscripts\_snd::snd_message( "aud_start_mix_mig_passby" );
     level.player common_scripts\utility::delaycall( 2, ::playsound, "scn_cliffhanger_intro_wind_front" );
-    level.scr_model["worldbody"] = "viewbody_us_army"; //here
+    level.scr_model["worldbody"] = "worldbody_h1_sas_woodland"; //here
 }
 
 _id_D3E6()

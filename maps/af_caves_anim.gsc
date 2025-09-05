@@ -263,7 +263,7 @@ script_models()
 player_animations()
 {
     level.scr_animtree["player_rig"] = #animtree;
-    level.scr_model["player_rig"] = "viewhands_player_us_army"; //here
+    level.scr_model["player_rig"] = "viewhands_player_sas_woodland"; //here
     level.scr_anim["player_rig"]["rappel_close"] = %h2_afgan_caves_player_rappel_close;
     level.scr_anim["player_rig"]["rappel_far"] = %h2_afgan_caves_player_rappel_far;
     level.scr_anim["player_rig"]["rappel_close_node"] = %cave_rappel_close;
@@ -272,7 +272,7 @@ player_animations()
     level.scr_anim["player_rig"]["rappel_root"] = %cave_rappel;
     level.scr_anim["player_rig"]["rappel_kill"] = %h2_afgan_caves_player_rappel_end_kill;
     level.scr_animtree["worldbody"] = #animtree;
-    level.scr_model["worldbody"] = "viewbody_us_army"; //here
+    level.scr_model["worldbody"] = "worldbody_h1_sas_woodland"; //here
     level.scr_anim["worldbody"]["barracks_stealth_takedown"] = %h2_afgan_caves_takedown_player;
     maps\_anim::addnotetrack_customfunction( "player_rig", "start_guard", ::_id_BAE1 );
     level.scr_anim["worldbody"]["slide_in"] = %h2_cliffhanger_slide_in;

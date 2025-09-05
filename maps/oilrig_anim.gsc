@@ -474,10 +474,10 @@ dialogue()
 player_anims()
 {
     level.scr_animtree["worldbody"] = #animtree;
-    level.scr_model["worldbody"] = "viewbody_us_army";
+    level.scr_model["worldbody"] = "worldbody_h1_sas_woodland";
     level.scr_anim["worldbody"]["smoker_takedown"] = %h2_oilrig_smoker_takedown_player;
     level.scr_animtree["player_rig"] = #animtree;
-    level.scr_model["player_rig"] = "viewhands_player_us_army";
+    level.scr_model["player_rig"] = "viewhands_player_sas_woodland";
     level.scr_anim["player_rig"]["underwater_player_start"] = %oilrig_sub_a_disembark_player;
     level.scr_anim["player_rig"]["player_stealth_kill"] = %h2_oilrig_underwater_kill_player;
     maps\_anim::addnotetrack_attach( "player_rig", "knife", "weapon_parabolic_knife", "tag_weapon_right", "player_stealth_kill" );

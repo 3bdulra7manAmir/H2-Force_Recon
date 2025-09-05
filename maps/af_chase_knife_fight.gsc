@@ -459,7 +459,7 @@ _id_B33A()
     thread _id_C0DB();
     maps\af_chase_knife_fight_code::_id_D354();
     var_2 = spawn( "script_model", level.player.origin + ( 0.0, 0.0, 32.0 ) );
-    var_2 setmodel( "viewbody_us_army" ); //here
+    var_2 setmodel( "worldbody_h1_sas_woodland" ); //here
     var_2 hide();
     var_2 linkto( level.player );
     maps\af_chase_knife_fight_code::_id_C4D6();
@@ -734,7 +734,7 @@ _id_AA12()
 _id_BA36( var_0 )
 {
     common_scripts\utility::flag_set( "bloody_player_rig" );
-    var_0 setmodel( "viewbody_us_army" ); //here
+    var_0 setmodel( "worldbody_h1_sas_woodland" ); //here
 }
 
 _id_CA99()

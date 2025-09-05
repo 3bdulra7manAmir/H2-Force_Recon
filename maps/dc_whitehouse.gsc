@@ -204,8 +204,8 @@ _id_B414()
     maps\dc_whitehouse_code::_id_D04E();
     maps\_utility::battlechatter_off( "allies" );
     level.foley thread _id_C99D();
-    level.foley.name = "Sgt. Foley - Shadow Company"; //here
-    level._id_ACC0.name = "Cpl. Dunn - Shadow Company"; //here
+    level.foley.name = "Sgt. Foley - Force Recon"; //here
+    level._id_ACC0.name = "Cpl. Dunn - Force Recon"; //here
     level._id_ACC0 thread _id_ABD3();
     common_scripts\utility::flag_wait( "tunnels_wave_guy" );
     thread maps\_weather::rainmedium( 15 );

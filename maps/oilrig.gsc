@@ -34,7 +34,7 @@ pre_load()
     setdvar( "use_node_script_flag_wait_in_color_system", 1 );
     setsaveddvar( "ai_force_combat_close", 1 );
     setsaveddvar( "ai_stairsPerfectFriendlyAimInMeleeRange", 1 );
-    level.slowmo_viewhands = "viewmodel_base_viewhands";
+    level.slowmo_viewhands = "viewhands_sas_woodland";
     level._id_B522 = 3;
     level.dronecallbackthread = ::_id_B6A2;
     setdynamicdvar( "oilrig_debug", "0" );
@@ -91,8 +91,8 @@ pre_load()
     level._id_C830[11] = "weapon_dragunov_clip";
     level._id_C830[12] = "weapon_saw_clip";
     level._id_C830[13] = "weapon_famas_clip";
-    level._id_B8AB = "viewmodel_base_viewhands"; //here
-    level.scr_model["worldbody"] = "viewbody_us_army"; //here
+    level._id_B8AB = "viewhands_sas_woodland"; //here
+    level.scr_model["worldbody"] = "worldbody_h1_sas_woodland"; //here
     _id_AAAB::main();
     maps\_drone_civilian::init();
     vehicle_scripts\_attack_heli::preload();
@@ -4768,10 +4768,10 @@ _id_B351( var_0, var_1, var_2 )
         level.squad = [];
         level._id_AC03 = maps\_utility::spawn_script_noteworthy( "price" );
         
-        level._id_AC03.name = "Soap - Shadow Company"; //here
+        level._id_AC03.name = "Soap - Force Recon"; //here
         level._id_AC03.animname = "soap";
-        level._id_C280.name = "Ghost - Shadow Company"; //here
-        level._id_BBBD.name = "Ghost - Shadow Company"; //here
+        level._id_C280.name = "Ghost - Force Recon"; //here
+        level._id_BBBD.name = "Ghost - Force Recon"; //here
 
         level._id_C280 = maps\_utility::spawn_script_noteworthy( "friendly02" );
         level._id_BBBD = maps\_utility::spawn_script_noteworthy( "friendly03" );
@@ -5960,13 +5960,13 @@ replacemodelforwetallies()
 
 replacemodelforwetplayer()
 {
-    level.scr_model["player_rig"] = "viewmodel_base_viewhands"; //here
-    level.player setviewmodel( "viewmodel_base_viewhands" ); //here
+    level.scr_model["player_rig"] = "viewhands_sas_woodland"; //here
+    level.player setviewmodel( "viewhands_sas_woodland" ); //here
     common_scripts\utility::flag_wait( "obj_c4_ambush_plant_complete" );
-    level.scr_model["player_rig"] = "viewmodel_base_viewhands"; //here
-    level.player setviewmodel( "viewmodel_base_viewhands" ); //here
-    level.scr_model["h2_active_breacher_rig"] = "viewbody_us_army"; //here
-    level.scr_model["worldbody"] = "viewbody_us_army"; //here
+    level.scr_model["player_rig"] = "viewhands_sas_woodland"; //here
+    level.player setviewmodel( "viewhands_sas_woodland" ); //here
+    level.scr_model["h2_active_breacher_rig"] = "worldbody_h1_sas_woodland"; //here
+    level.scr_model["worldbody"] = "worldbody_h1_sas_woodland"; //here
 }
 
 soap_stairs_anim()
@@ -6289,7 +6289,7 @@ info_volume_objects_hide()
 
     foreach ( var_8 in var_5 )
     {
-        if ( var_8.model == "mil_frame_charge" || var_8.model == "h2_oilr_door_breaching_undamaged" || var_8.model == "viewmodel_base_viewhands" || var_8.model == "oilrig_water_plane" || var_8.model == "oilrig_water_plane_far" || var_8.model == "oilrig_water_plane_near" || var_8.model == "h2_oilr_water_under_top" || var_8.model == "h2_fav_garage_door_03_animated" || var_8.model == "weapon_c4" || var_8.model == "h2_oilr_water_under_02" || var_8.model == "h2_oilr_water_under" || var_8.model == "h2_oilr_water_under_top" || var_8.model == "intel_item_laptop" )
+        if ( var_8.model == "mil_frame_charge" || var_8.model == "h2_oilr_door_breaching_undamaged" || var_8.model == "viewhands_sas_woodland" || var_8.model == "oilrig_water_plane" || var_8.model == "oilrig_water_plane_far" || var_8.model == "oilrig_water_plane_near" || var_8.model == "h2_oilr_water_under_top" || var_8.model == "h2_fav_garage_door_03_animated" || var_8.model == "weapon_c4" || var_8.model == "h2_oilr_water_under_02" || var_8.model == "h2_oilr_water_under" || var_8.model == "h2_oilr_water_under_top" || var_8.model == "intel_item_laptop" )
             var_6 = common_scripts\utility::array_add( var_6, var_8 );
     }
 

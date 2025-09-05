@@ -4,7 +4,7 @@
 _id_C2B0()
 {
     level._id_CA75 = "mil_frame_charge";
-    level._id_B8AB = "viewbody_us_army"; //here
+    level._id_B8AB = "worldbody_h1_sas_woodland"; //here
     setdvar( "use_improved_breaches", 1 );
     _id_C989::main();
     _id_C908::main();

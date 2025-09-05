@@ -21,7 +21,7 @@ _id_A902()
 _id_B405()
 {
     level.scr_animtree["player_body"] = #animtree;
-    level.scr_model["player_body"] = "viewbody_us_army"; //here
+    level.scr_model["player_body"] = "worldbody_h1_sas_woodland"; //here
     level.scr_anim["player_body"]["price_wakeup"] = %afchase_ending_player_body;
     level.scr_animtree["worldbody"] = #animtree;
 
@@ -30,7 +30,7 @@ _id_B405()
     // else
     //     level.scr_model["worldbody"] = "viewbody_tf141";
 
-    level.scr_model["worldbody"] = "viewbody_us_army"; //here
+    level.scr_model["worldbody"] = "worldbody_h1_sas_woodland"; //here
     level.scr_anim["worldbody"]["impaled_takedown"] = %h2_af_chase_impaled_takedown_player;
     level.scr_anim["worldbody"]["crawl_takedown"] = %h2_af_chase_crawl_takedown_player;
     maps\_anim::addnotetrack_customfunction( "worldbody", "switch_bloody", ::_id_B7C7 );
@@ -598,7 +598,7 @@ _id_B6FB( var_0 )
 player_animations()
 {
     level.scr_animtree["player_rig"] = #animtree;
-    level.scr_model["player_rig"] = "viewbody_us_army"; //here
+    level.scr_model["player_rig"] = "worldbody_h1_sas_woodland"; //here
     level.scr_anim["player_rig"]["knife_moment"] = %player_afchase_ending_knife_moment;
     level.scr_anim["player_rig"]["wakeup"] = %h2_afchase_player_getup;
     level.scr_anim["player_rig"]["prethrow"] = %h2_afchase_player_knife_throw_soon;
@@ -658,7 +658,7 @@ player_animations()
     level.scr_anim["player_rig"]["pull_additive_02"] = %h2_afchase_player_knife_pull_02_add;
     level.scr_anim["player_rig"]["pull_additive_03"] = %h2_afchase_player_knife_pull_03_add;
     level.scr_animtree["dizzy_stumble"] = #animtree;
-    level.scr_model["dizzy_stumble"] = "viewhands_player_us_army"; //here
+    level.scr_model["dizzy_stumble"] = "viewhands_player_sas_woodland"; //here
     level.scr_anim["dizzy_stumble"]["dizzy_stumble_1"] = %h2_wpn_melee_knife_dizzy_stumble_l;
     level.scr_anim["dizzy_stumble"]["dizzy_stumble_2"] = %h2_wpn_melee_knife_dizzy_stumble_r;
     level.scr_anim["dizzy_stumble"]["dizzy_stumble_3"] = %h2_wpn_melee_knife_dizzy_idlebreaker;

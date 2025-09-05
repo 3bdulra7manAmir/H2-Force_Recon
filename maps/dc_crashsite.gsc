@@ -32,10 +32,10 @@ main()
     common_scripts\utility::flag_init( "emp_happening" );
     precacheshellshock( "dcburning" );
     precachemodel( "weapon_m4_clip" );
-    precachemodel( "viewhands_player_us_army" );
+    precachemodel( "viewhands_player_sas_woodland" );
     precacheturret( "heli_spotlight" );
     precachemodel( "weapon_m4" );
-    precachemodel( "viewbody_us_army_injured" );
+    precachemodel( "worldbody_h1_sas_woodland_injured" );
     precachemodel( "head_us_army_b" );
     _id_BC93();
     _id_ABAD();
@@ -201,8 +201,8 @@ _id_B0C4()
     level._id_AC03 hide();
     level._id_C280 hide();
     level._id_BBBD hide();
-    level._id_C280.name = "Cpl. Dunn - Shadow Company"; //here
-    level._id_AC03.name = "Sgt. Foley - Shadow Company"; //here
+    level._id_C280.name = "Cpl. Dunn - Force Recon"; //here
+    level._id_AC03.name = "Sgt. Foley - Force Recon"; //here
     level._id_AC03.animname = "crash_leader";
     level._id_C280.animname = "crash_dunn";
     level._id_BBBD.animname = "crash_redshirt";
@@ -908,7 +908,7 @@ _id_D299( var_0 )
 _id_ABAD()
 {
     level.scr_animtree["player_rig"] = #animtree;
-    level.scr_model["player_rig"] = "viewbody_us_army_injured"; //here
+    level.scr_model["player_rig"] = "worldbody_h1_sas_woodland_injured"; //here
     level.scr_anim["player_rig"]["dcburning_BHrescue"] = %h2_dcburning_bhrescue_player_wakeup;
     level.scr_anim["player_rig"]["dcburning_BHrescue_throwclip"] = %h2_dcburning_bhrescue_player_takeammo;
     maps\_anim::addnotetrack_customfunction( "player_rig", "upright", ::_id_B116, "dcburning_BHrescue" );

@@ -49,7 +49,7 @@ main()
     precacheitem( "cheytac_silencer_desert" );
 
     //level._id_B8AB = "h2_gfl_m4_sopmod_ii_viewbody"; //here
-    level._id_B8AB = "viewbody_us_army"; //here
+    level._id_B8AB = "worldbody_h1_sas_woodland"; //here
     level._id_C0C9 = 1;
     level._id_C7C3 = 1;
     _id_CFD6::main();
@@ -71,7 +71,7 @@ main()
     common_scripts\utility::array_thread( getentarray( "steamroom_c4", "targetname" ), maps\_load::ammo_pickup, "c4" );
     maps\af_caves_backhalf::_id_B17D();
     //maps\_load::set_player_viewhand_model( "h2_gfl_m4_sopmod_ii_viewhands_player" ); //here
-    maps\_load::set_player_viewhand_model( "viewmodel_base_viewhands" );
+    maps\_load::set_player_viewhand_model( "viewhands_sas_woodland" );
     maps\_drone_ai::init();
     maps\_slowmo_breach::slowmo_breach_init();
     maps\_nightvision::main();

@@ -4,8 +4,8 @@
 
 main()
 {
-    maps\_load::set_player_viewhand_model( "viewmodel_base_viewhands" ); //here
-    level.scr_model["player_rig"] = "viewhands_player_us_army"; //here
+    maps\_load::set_player_viewhand_model( "viewhands_sas_woodland" ); //here
+    level.scr_model["player_rig"] = "viewhands_player_sas_woodland"; //here
     _id_B740();
     _id_B728();
     script_model_animation();
@@ -31,8 +31,8 @@ main()
 
 dialogue()
 {
-    maps\_load::set_player_viewhand_model( "viewmodel_base_viewhands" ); //here
-    level.scr_model["player_rig"] = "viewhands_player_us_army"; //here
+    maps\_load::set_player_viewhand_model( "viewhands_sas_woodland" ); //here
+    level.scr_model["player_rig"] = "viewhands_player_sas_woodland"; //here
     level.scr_radio["byard_pri_wipeoutus"] = "byard_pri_wipeoutus";
     level.scr_radio["byard_pri_backupplan"] = "byard_pri_backupplan";
     level.scr_radio["byard_pri_lzishot"] = "byard_pri_lzishot";
@@ -83,21 +83,21 @@ dialogue()
 
 _id_ACDD()
 {
-    maps\_load::set_player_viewhand_model( "viewmodel_base_viewhands" ); //here
-    level.scr_model["player_rig"] = "viewhands_player_us_army"; //here
+    maps\_load::set_player_viewhand_model( "viewhands_sas_woodland" ); //here
+    level.scr_model["player_rig"] = "viewhands_player_sas_woodland"; //here
     maps\_vehicle::_id_CCF4( "script_vehicle_uaz_open_destructible", ::_id_BCD0, ::_id_AD49 );
     maps\_vehicle::_id_BCB7( "script_vehicle_uaz_open_destructible", maps\boneyard_code::_id_CFFD );
     maps\_vehicle::_id_CCF4( "script_vehicle_pickup_roobars_physics", ::_id_B7AE, ::_id_D387 );
     maps\_vehicle::_id_CCF4( "script_vehicle_suburban_technical", ::_id_ACB1, _id_D3FE::set_vehicle_anims );
     maps\_vehicle::_id_CCF4( "script_vehicle_suburban", ::_id_D277, _id_ADD8::set_vehicle_anims );
-    maps\_load::set_player_viewhand_model( "viewmodel_base_viewhands" ); //here
-    level.scr_model["player_rig"] = "viewhands_player_us_army"; //here
+    maps\_load::set_player_viewhand_model( "viewhands_sas_woodland" ); //here
+    level.scr_model["player_rig"] = "viewhands_player_sas_woodland"; //here
 }
 
 _id_B7AE()
 {
-    maps\_load::set_player_viewhand_model( "viewmodel_base_viewhands" ); //here
-    level.scr_model["player_rig"] = "viewhands_player_us_army"; //here
+    maps\_load::set_player_viewhand_model( "viewhands_sas_woodland" ); //here
+    level.scr_model["player_rig"] = "viewhands_player_sas_woodland"; //here
     var_0 = _id_BE7B::setanims();
     var_0[1].sittag = "tag_guy3";
     var_0[3].sittag = "tag_guy2";
@@ -109,8 +109,8 @@ _id_B7AE()
 
 _id_ACB1()
 {
-    maps\_load::set_player_viewhand_model( "viewmodel_base_viewhands" ); //here
-    level.scr_model["player_rig"] = "viewhands_player_us_army"; //here
+    maps\_load::set_player_viewhand_model( "viewhands_sas_woodland" ); //here
+    level.scr_model["player_rig"] = "viewhands_player_sas_woodland"; //here
     var_0 = _id_D3FE::setanims();
     var_0 = _id_BE6C( var_0 );
     return var_0;
@@ -118,8 +118,8 @@ _id_ACB1()
 
 _id_D277()
 {
-    maps\_load::set_player_viewhand_model( "viewmodel_base_viewhands" ); //here
-    level.scr_model["player_rig"] = "viewhands_player_us_army"; //here
+    maps\_load::set_player_viewhand_model( "viewhands_sas_woodland" ); //here
+    level.scr_model["player_rig"] = "viewhands_player_sas_woodland"; //here
     var_0 = _id_ADD8::setanims();
     var_0 = _id_BE6C( var_0 );
     var_0[1].death = %uaz_rear_driver_death;
@@ -130,8 +130,8 @@ _id_D277()
 
 _id_BE6C( var_0 )
 {
-    maps\_load::set_player_viewhand_model( "viewmodel_base_viewhands" ); //here
-    level.scr_model["player_rig"] = "viewhands_player_us_army"; //here
+    maps\_load::set_player_viewhand_model( "viewhands_sas_woodland" ); //here
+    level.scr_model["player_rig"] = "viewhands_player_sas_woodland"; //here
     var_0[1]._id_D077[0] = %uaz_rguy_scan_side_v1;
     var_0[1]._id_D077[1] = %uaz_rguy_scan_side_v1;
     var_0[1]._id_ABD8[0] = 500;
@@ -149,8 +149,8 @@ _id_BE6C( var_0 )
 
 _id_BCD0()
 {
-    maps\_load::set_player_viewhand_model( "viewmodel_base_viewhands" ); //here
-    level.scr_model["player_rig"] = "viewhands_player_us_army"; //here
+    maps\_load::set_player_viewhand_model( "viewhands_sas_woodland" ); //here
+    level.scr_model["player_rig"] = "viewhands_player_sas_woodland"; //here
     var_0 = _id_C782::setanims();
     var_0[0].sittag = "tag_driver";
     var_0[1].sittag = "tag_passenger";
@@ -194,8 +194,8 @@ _id_BCD0()
 
 _id_AD49( var_0 )
 {
-    maps\_load::set_player_viewhand_model( "viewmodel_base_viewhands" ); //here
-    level.scr_model["player_rig"] = "viewhands_player_us_army"; //here
+    maps\_load::set_player_viewhand_model( "viewhands_sas_woodland" ); //here
+    level.scr_model["player_rig"] = "viewhands_player_sas_woodland"; //here
     var_0 = _id_C782::set_vehicle_anims( var_0 );
     var_0[0].vehicle_idle = %uaz_steeringwheel_idle;
     var_0[0].vehicle_duck_once = %uaz_steeringwheel_duck;
@@ -209,8 +209,8 @@ _id_AD49( var_0 )
 
 _id_D387( var_0 )
 {
-    maps\_load::set_player_viewhand_model( "viewmodel_base_viewhands" ); //here
-    level.scr_model["player_rig"] = "viewhands_player_us_army"; //here
+    maps\_load::set_player_viewhand_model( "viewhands_sas_woodland" ); //here
+    level.scr_model["player_rig"] = "viewhands_player_sas_woodland"; //here
     var_0[0].vehicle_getoutanim = %door_pickup_driver_climb_out;
     var_0[1].vehicle_getoutanim = %door_pickup_passenger_climb_out;
     var_0[2].vehicle_getoutanim = %door_pickup_passenger_rr_climb_out;
@@ -228,8 +228,8 @@ _id_D387( var_0 )
 
 _id_B740()
 {
-    maps\_load::set_player_viewhand_model( "viewmodel_base_viewhands" ); //here
-    level.scr_model["player_rig"] = "viewhands_player_us_army"; //here
+    maps\_load::set_player_viewhand_model( "viewhands_sas_woodland" ); //here
+    level.scr_model["player_rig"] = "viewhands_player_sas_woodland"; //here
     level.scr_anim["c130_propeller"]["rotate"][0] = %rotate_x_r;
     level.scr_animtree["c130_propeller"] = #animtree;
     level.scr_anim["generic"]["boneyard_jeep_evac"] = %boneyard_jeep_evac;
@@ -244,8 +244,8 @@ _id_B740()
 
 c130_anims()
 {
-    maps\_load::set_player_viewhand_model( "viewmodel_base_viewhands" ); //here
-    level.scr_model["player_rig"] = "viewhands_player_us_army"; //here
+    maps\_load::set_player_viewhand_model( "viewhands_sas_woodland" ); //here
+    level.scr_model["player_rig"] = "viewhands_player_sas_woodland"; //here
     level.scr_animtree["nikolai"] = #animtree;
     level.scr_model["nikolai"] = "body_force_c_woodland"; //here
     level.scr_anim["nikolai"]["nikolai_idle"][0] = %cobra_copilot_idle;
@@ -255,7 +255,7 @@ c130_anims()
 _id_B728()
 {
     level.scr_animtree["player_rig"] = #animtree;
-    level.scr_model["player_rig"] = "viewhands_player_us_army"; //here
+    level.scr_model["player_rig"] = "viewhands_player_sas_woodland"; //here
     level.scr_anim["player_rig"]["boneyard_uaz_sit"] = %boneyard_player_uaz_sit;
     level.scr_anim["player_rig"]["boneyard_uaz_stand"] = %boneyard_player_uaz_stand;
     level.scr_anim["player_rig"]["boneyard_uaz_mount"] = %boneyard_player_enter_uaz;
@@ -266,7 +266,7 @@ _id_B728()
     level.scr_anim["player_rig"]["steer_right"] = %h2_boneyard_player_steer_right;
     level.scr_anim["player_rig"]["jeep_evac"] = %h2_boneyard_jeep_evac;
     level.scr_animtree["worldbody"] = #animtree;
-    level.scr_model["worldbody"] = "viewbody_us_army"; //here
+    level.scr_model["worldbody"] = "worldbody_h1_sas_woodland"; //here
     level.scr_anim["worldbody"]["jeep_evac"] = %h2_boneyard_jeep_evac;
     level.scr_animtree["worldbody"] = #animtree;
     level.scr_anim["worldbody"]["slide_in"] = %h2_cliffhanger_slide_in;
@@ -277,8 +277,8 @@ _id_B728()
     level.scr_anim["worldbody"]["slide_back_out"] = %h2_cliffhanger_slide_back_out;
     level.scr_anim["worldbody"]["slide_ar"] = %h2_cliffhanger_slide_turnl;
     level.scr_anim["worldbody"]["slide_al"] = %h2_cliffhanger_slide_turnr;
-    maps\_load::set_player_viewhand_model( "viewmodel_base_viewhands" ); //here
-    level.scr_model["player_rig"] = "viewhands_player_us_army"; //here
+    maps\_load::set_player_viewhand_model( "viewhands_sas_woodland" ); //here
+    level.scr_model["player_rig"] = "viewhands_player_sas_woodland"; //here
     maps\_anim::addonstart_animsound( "player_rig", "boneyard_uaz_mount", "scn_plr_boneyard_uaz_mount" );
 }
 #using_animtree("script_model");

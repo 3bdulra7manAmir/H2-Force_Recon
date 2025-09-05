@@ -48,9 +48,9 @@ _id_CF05()
     level.price maps\_utility::stop_magic_bullet_shield();
     level.player lerpviewangleclamp( 0.5, 0.5, 0, 15, 15, 75, 5 );
     level.player setviewangleresistance( 50, 50, 20, 20 );
-    maps\_load::set_player_viewhand_model( "viewmodel_base_viewhands" ); //here
-    level.scr_model["player_rig"] = "viewhands_player_us_army"; //here
-    //level.player.rig setmodel( "viewbody_us_army" ); //here
+    maps\_load::set_player_viewhand_model( "viewhands_sas_woodland" ); //here
+    level.scr_model["player_rig"] = "viewhands_player_sas_woodland"; //here
+    //level.player.rig setmodel( "worldbody_h1_sas_woodland" ); //here
     wait 0.5;
     maps\_utility::enableplayerweapons( 0 );
     level.player.rig common_scripts\utility::delaycall( 0.2, ::show );
@@ -1070,8 +1070,8 @@ _id_C1A1()
         var_1 = 1;
 
     waittillframeend;
-    maps\_load::set_player_viewhand_model( "viewmodel_base_viewhands" ); //here
-    level.scr_model["player_rig"] = "viewhands_player_us_army"; //here
+    maps\_load::set_player_viewhand_model( "viewhands_sas_woodland" ); //here
+    level.scr_model["player_rig"] = "viewhands_player_sas_woodland"; //here
 
     switch ( var_0 )
     {
