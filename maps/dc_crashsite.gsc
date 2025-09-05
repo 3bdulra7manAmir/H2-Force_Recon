@@ -35,7 +35,7 @@ main()
     precachemodel( "viewhands_player_sas_woodland" );
     precacheturret( "heli_spotlight" );
     precachemodel( "weapon_m4" );
-    precachemodel( "worldbody_h1_sas_woodland_injured" );
+    precachemodel( "worldbody_h1_sas_woodland" );
     precachemodel( "head_us_army_b" );
     _id_BC93();
     _id_ABAD();
@@ -908,7 +908,7 @@ _id_D299( var_0 )
 _id_ABAD()
 {
     level.scr_animtree["player_rig"] = #animtree;
-    level.scr_model["player_rig"] = "worldbody_h1_sas_woodland_injured"; //here
+    level.scr_model["player_rig"] = "worldbody_h1_sas_woodland"; //here
     level.scr_anim["player_rig"]["dcburning_BHrescue"] = %h2_dcburning_bhrescue_player_wakeup;
     level.scr_anim["player_rig"]["dcburning_BHrescue_throwclip"] = %h2_dcburning_bhrescue_player_takeammo;
     maps\_anim::addnotetrack_customfunction( "player_rig", "upright", ::_id_B116, "dcburning_BHrescue" );
