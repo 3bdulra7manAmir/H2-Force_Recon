@@ -32,9 +32,9 @@ give_loadout()
 
     maps\_loadout_code::loadout( "favela", "masada_grenadier_acog", "m1014", "fraggrenade", "flash_grenade", "viewhands_sas_woodland", "taskforce" );
 
-    maps\_loadout_code::loadout( "invasion", "scar_h_reflex_shotgun", "beretta", "fraggrenade", "smoke_grenade_american", "viewhands_sas_woodland", "american" );
+    maps\_loadout_code::loadout( "invasion", "scar_h_reflex_shotgun", "cheytac", "fraggrenade", "smoke_grenade_american", "viewhands_sas_woodland", "american" );
 
-    maps\_loadout_code::loadout( "favela_escape", "ump45_acog", "glock", "fraggrenade", "flash_grenade", "viewhands_sas_woodland", "taskforce" );
+    maps\_loadout_code::loadout( "favela_escape", "ump45_acog", "glock", "cheytac", "fraggrenade", "flash_grenade", "viewhands_sas_woodland", "taskforce" );
 
     maps\_loadout_code::loadout( "arcadia", "masada_digital_acog", "beretta", "fraggrenade", "flash_grenade", "viewhands_sas_woodland", "american" );
 
@@ -44,7 +44,7 @@ give_loadout()
 
     maps\_loadout_code::loadout( "dcburning", "m4m203_eotech", "beretta", "fraggrenade", "flash_grenade", "viewhands_sas_woodland", "american" );
 
-    maps\_loadout_code::loadout( "contingency", "m21_scoped_arctic_silenced", "usp_silencer", "fraggrenade", "flash_grenade", "viewhands_sas_woodland", "american" );
+    maps\_loadout_code::loadout( "contingency", "cheytac_silencer", "usp_silencer", "fraggrenade", "flash_grenade", "viewhands_sas_woodland", "american" );
 
     maps\_loadout_code::loadout( "dcemp", "m4m203_eotech", "beretta", "fraggrenade", "flash_grenade", "viewhands_sas_woodland", "american" );
 
@@ -74,4 +74,7 @@ give_loadout()
     precachemodel("viewhands_sas_woodland");
     precachemodel("viewhands_player_sas_woodland");
     precachemodel("worldbody_h1_sas_woodland");
+	
+    precacheitem("cheytac");
+    precacheitem("cheytac_silencer");
 }
