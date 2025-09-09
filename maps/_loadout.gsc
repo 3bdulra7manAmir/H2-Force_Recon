@@ -44,7 +44,7 @@ give_loadout()
 
     maps\_loadout_code::loadout( "dcburning", "m4m203_eotech", "beretta", "fraggrenade", "flash_grenade", "viewhands_sas_woodland", "american" );
 
-    maps\_loadout_code::loadout( "contingency", "cheytac_silencer", "usp_silencer", "fraggrenade", "flash_grenade", "viewhands_sas_woodland", "american" );
+    maps\_loadout_code::loadout( "contingency", "cheytac_silencer", "kriss_acog_silencer", "fraggrenade", "flash_grenade", "viewhands_sas_woodland", "american" );
 
     maps\_loadout_code::loadout( "dcemp", "m4m203_eotech", "beretta", "fraggrenade", "flash_grenade", "viewhands_sas_woodland", "american" );
 
@@ -77,4 +77,5 @@ give_loadout()
 	
     precacheitem("cheytac");
     precacheitem("cheytac_silencer");
+    precacheitem("kriss_acog_silencer");
 }
