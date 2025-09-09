@@ -75,6 +75,13 @@ give_loadout()
     precachemodel("viewhands_player_sas_woodland");
     precachemodel("worldbody_h1_sas_woodland");
 	
+	if( level.script == "contingency" )
+	{
+		level.player giveweapon( "ak47_arctic_grenadier" );
+		level.player givemaxammo( "ak47_arctic_grenadier" );
+        //level.player setweaponammoclip( "ak47_arctic_grenadier", 60 );
+	}
+	
     precacheitem("cheytac");
     precacheitem("cheytac_silencer");
     precacheitem("kriss_acog_silencer");
